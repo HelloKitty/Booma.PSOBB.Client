@@ -277,16 +277,6 @@ MonoBehaviour:
   m_Script: {fileID: -1835071956, guid: 33920f702db35ff43a3b2f6c2a24e650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnSuccessfulAuthentication:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  OnFailedAuthentication:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Booma.Client.AuthenticationClient+FailedAuthenticationUnityEvent,
-      Booma.Authentication.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &134547385
 GameObject:
   m_ObjectHideFlags: 0
@@ -21494,7 +21484,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -134}
+  m_AnchoredPosition: {x: 0, y: -133.99998}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1948809959
@@ -21756,7 +21746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 6fd0af2c4eda9994d882f6104f6f0312, type: 2}
+  profile: {fileID: 11400000, guid: 3d1b56ee5ea38a2439e1c128c0340a67, type: 2}
 --- !u!114 &1973791209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22109,9 +22099,6 @@ MonoBehaviour:
   m_Script: {fileID: 1342804385, guid: 33920f702db35ff43a3b2f6c2a24e650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RegisterFlags: 
-  _ServiceDiscoveryEndpoint: http://localhost:5000
-  Locale: 1
 --- !u!114 &2138190187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22123,7 +22110,6 @@ MonoBehaviour:
   m_Script: {fileID: -614546593, guid: 02ea5c445d9aba447889a50c05e97ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RegisterFlags: 04
 --- !u!114 &2138190188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22146,9 +22132,6 @@ MonoBehaviour:
   m_Script: {fileID: 1412651099, guid: a2dfb0ac831386a48b71f36616ff3d65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typePairs: []
-  nonBehaviourDependencies: []
-  containerServiceProvider: {fileID: 2138190188}
 --- !u!4 &2138190190
 Transform:
   m_ObjectHideFlags: 0
@@ -22173,4 +22156,3 @@ MonoBehaviour:
   m_Script: {fileID: 1351306360, guid: 33920f702db35ff43a3b2f6c2a24e650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RegisterFlags: 
