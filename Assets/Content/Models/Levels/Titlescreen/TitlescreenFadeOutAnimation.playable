@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: TitlescreenFadeOutAnimation
   m_EditorClassIdentifier: 
   m_Id: 0
-  m_NextId: 0
+  m_NextId: 1
   m_Tracks:
   - {fileID: 114506369004011450}
   - {fileID: 114892660968020842}
