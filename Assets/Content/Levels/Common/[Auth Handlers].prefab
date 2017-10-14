@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4172281897543974}
   - component: {fileID: 114197144153080642}
   - component: {fileID: 114736326278347978}
-  - component: {fileID: 114649705933426082}
+  - component: {fileID: 114649379822779466}
   m_Layer: 0
   m_Name: '[Auth Handlers]'
   m_TagString: Untagged
@@ -62,7 +62,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
---- !u!114 &114649705933426082
+--- !u!114 &114649379822779466
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -70,9 +70,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258238855478870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 1490652534, guid: a630b40ccdecbc34c8c2f688e23e3d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
 --- !u!114 &114736326278347978
 MonoBehaviour:
   m_ObjectHideFlags: 1
