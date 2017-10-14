@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypePairs:
-  - behaviour: {fileID: 114361001307413594}
+  - behaviour: {fileID: 0}
     ImplementedTypes:
     - Booma.Proxy.ILoginSessionDetails, Booma.Proxy.Client.Unity.Login, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -79,7 +79,7 @@ MonoBehaviour:
     SelectedTypeString: Booma.Proxy.ILoginSessionDetails, Booma.Proxy.Client.Unity.Login,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     SelectedPopupIndex: 0
-  - behaviour: {fileID: 114409983136222076}
+  - behaviour: {fileID: 0}
     ImplementedTypes:
     - Booma.Proxy.ILoginConnectionEndpointDetails, Booma.Proxy.Client.Unity.Login,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1989855606830274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -387000947, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -1943801071, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114361001307413594
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1989855606830274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -648948680, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -2131595504, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114409983136222076
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1989855606830274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2131595504, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -648948680, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114599975339072582
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1989855606830274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067430058, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: 187755695, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LoggingLevel: 0

@@ -4507,9 +4507,8 @@ GameObject:
   m_Component:
   - component: {fileID: 466390496}
   - component: {fileID: 466390495}
-  - component: {fileID: 466390492}
   - component: {fileID: 466390493}
-  - component: {fileID: 466390494}
+  - component: {fileID: 466390492}
   m_Layer: 0
   m_Name: '[Handlers]'
   m_TagString: Untagged
@@ -4525,57 +4524,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 466390491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1719580894, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
---- !u!114 &466390493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466390491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 509263782, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  OnLoginFailed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  OnLoginSuccess:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
---- !u!114 &466390494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466390491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -34110263, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -2136215474, guid: a630b40ccdecbc34c8c2f688e23e3d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -4603,6 +4552,36 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &466390493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 466390491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -903594527, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  OnLoginFailed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnLoginSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &466390495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4611,7 +4590,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 466390491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -75827750, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -1152856672, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -5294,7 +5273,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 855699883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -387000947, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -1943801071, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &855699886
@@ -5305,7 +5284,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 855699883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067430058, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: 187755695, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LoggingLevel: 0
@@ -5332,7 +5311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypePairs:
-  - behaviour: {fileID: 1521826688}
+  - behaviour: {fileID: 1046218066}
     ImplementedTypes:
     - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=1.0.5.1,
       Culture=neutral, PublicKeyToken=null
@@ -5342,25 +5321,29 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=1.0.5.1,
       Culture=neutral, PublicKeyToken=null
-    SelectedTypeString: Booma.Proxy.ILoginDetailsModel, Booma.Proxy.Client.Unity.Login,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    SelectedPopupIndex: 2
-  - behaviour: {fileID: 1046218066}
-    ImplementedTypes:
-    - Booma.Proxy.ILoginSessionDetails, Booma.Proxy.Client.Unity.Login, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    - Booma.Proxy.SessionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Login,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    SelectedTypeString: Booma.Proxy.ILoginSessionDetails, Booma.Proxy.Client.Unity.Login,
+    SelectedTypeString: Booma.Proxy.IClientSessionDetails, Booma.Proxy.Client.Unity.Authentication,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     SelectedPopupIndex: 0
+  - behaviour: {fileID: 1521826688}
+    ImplementedTypes:
+    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=1.0.5.1,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - UnityEngine.ISerializationCallbackReceiver, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=1.0.5.1,
+      Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 1
   - behaviour: {fileID: 1898938783}
     ImplementedTypes:
     - Booma.Proxy.ILoginConnectionEndpointDetails, Booma.Proxy.Client.Unity.Login,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     - Booma.Proxy.ConnectionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Login,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    SelectedTypeString: Booma.Proxy.ILoginConnectionEndpointDetails, Booma.Proxy.Client.Unity.Login,
+    SelectedTypeString: Booma.Proxy.IGameConnectionEndpointDetails, Booma.Proxy.Client.Unity.Common,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     SelectedPopupIndex: 0
   NonBehaviourDependencies: []
@@ -8990,7 +8973,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 964526880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1605329628, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -1675282927, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -9572,7 +9555,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1046218065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1152035462, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -1152035462, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   VersionString: TethVer12510
@@ -10094,7 +10077,6 @@ GameObject:
   - component: {fileID: 1181585627}
   - component: {fileID: 1181585626}
   - component: {fileID: 1181585628}
-  - component: {fileID: 1181585629}
   m_Layer: 8
   m_Name: Press Enter Key Image
   m_TagString: Untagged
@@ -10226,17 +10208,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &1181585629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1181585620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1567939917, guid: fbfc78e03fd1ed14bb79554d91ad7380, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1201012436
 GameObject:
   m_ObjectHideFlags: 0
@@ -14037,7 +14008,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1428810275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1649269736, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -115239772, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -17656,7 +17627,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1521826687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 719799980, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: 1494054531, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -21729,7 +21700,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1898938781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1956185847, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: 1956185847, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EndpointIpAddress: 127.0.0.1

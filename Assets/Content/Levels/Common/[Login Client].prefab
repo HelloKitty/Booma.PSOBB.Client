@@ -48,7 +48,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1514608074641740}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1605329628, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -1675282927, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -60,4 +60,4 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  ConnectOnStart: 1
+  ConnectOnStart: 0
