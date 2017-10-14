@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114109477832341916}
   - component: {fileID: 114361001307413594}
   - component: {fileID: 114409983136222076}
+  - component: {fileID: 114046584774059992}
   m_Layer: 0
   m_Name: '[Sceneject Login]'
   m_TagString: Untagged
@@ -46,6 +47,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114046584774059992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989855606830274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1494054531, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: shouldLoadPassword
+      Entry: 5
+      Data: true
 --- !u!114 &114109477832341916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,24 +94,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypePairs:
-  - behaviour: {fileID: 0}
+  - behaviour: {fileID: 114361001307413594}
     ImplementedTypes:
-    - Booma.Proxy.ILoginSessionDetails, Booma.Proxy.Client.Unity.Login, Version=1.0.0.0,
+    - Booma.Proxy.IGameConnectionEndpointDetails, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.ConnectionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.IGameConnectionEndpointDetails, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  - behaviour: {fileID: 114409983136222076}
+    ImplementedTypes:
+    - Booma.Proxy.IClientSessionDetails, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.SessionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.IClientSessionDetails, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  - behaviour: {fileID: 114046584774059992}
+    ImplementedTypes:
+    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=1.0.5.1,
       Culture=neutral, PublicKeyToken=null
-    - Booma.Proxy.SessionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Login,
+    - Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Authentication,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    SelectedTypeString: Booma.Proxy.ILoginSessionDetails, Booma.Proxy.Client.Unity.Login,
+    - UnityEngine.ISerializationCallbackReceiver, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=1.0.5.1,
+      Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Authentication,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    SelectedPopupIndex: 0
-  - behaviour: {fileID: 0}
-    ImplementedTypes:
-    - Booma.Proxy.ILoginConnectionEndpointDetails, Booma.Proxy.Client.Unity.Login,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    - Booma.Proxy.ConnectionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Login,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    SelectedTypeString: Booma.Proxy.ILoginConnectionEndpointDetails, Booma.Proxy.Client.Unity.Login,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    SelectedPopupIndex: 0
+    SelectedPopupIndex: 1
   NonBehaviourDependencies: []
   ContainerServiceProvider: {fileID: 114623027692281158}
 --- !u!114 &114351848806031798
