@@ -215,9 +215,122 @@ Prefab:
       value: 
       objectReference: {fileID: 114776402892639106, guid: 884e279e2e4ff9f44ac0b556f3d6d241,
         type: 2}
+    - target: {fileID: 114776402892639106, guid: 884e279e2e4ff9f44ac0b556f3d6d241,
+        type: 2}
+      propertyPath: ConnectOnStart
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 884e279e2e4ff9f44ac0b556f3d6d241, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &540448277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1258238855478870, guid: 47b31c45702cbb242b90b710d164e620,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 540448281}
+  - component: {fileID: 540448280}
+  - component: {fileID: 540448279}
+  - component: {fileID: 540448278}
+  m_Layer: 0
+  m_Name: '[Auth Handlers]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &540448278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114649705933426082, guid: 47b31c45702cbb242b90b710d164e620,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540448277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1064213598, guid: 781a54675c1337b4fbf38a4e2e32f3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &540448279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540448277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -903594527, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  OnLoginFailed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnLoginSuccess:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 540448278}
+        m_MethodName: SendCharacterSelection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &540448280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540448277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1152856672, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+--- !u!4 &540448281
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540448277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 294.75626, y: 317.15244, z: -747.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662798057
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +358,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1621179241}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &662798059
 MonoBehaviour:
@@ -255,7 +368,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 662798057}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1870199072, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: -1870199072, guid: 781a54675c1337b4fbf38a4e2e32f3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &881701542
@@ -357,7 +470,6 @@ GameObject:
   - component: {fileID: 907883276}
   - component: {fileID: 907883275}
   - component: {fileID: 907883274}
-  - component: {fileID: 907883277}
   m_Layer: 0
   m_Name: '[Handlers]'
   m_TagString: Untagged
@@ -385,7 +497,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 907883273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 2030218999, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
+  m_Script: {fileID: 2030218999, guid: 781a54675c1337b4fbf38a4e2e32f3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -431,17 +543,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &907883277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 907883273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1064213598, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1155664991
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +636,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2078318152}
   - {fileID: 662798058}
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -550,11 +650,6 @@ Prefab:
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}
       propertyPath: TypePairs.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[2].ImplementedTypes.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
@@ -594,46 +689,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
+    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}
-      propertyPath: TypePairs.Array.data[2].behaviour
+      propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 2078318151}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
+      objectReference: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}
-      propertyPath: TypePairs.Array.data[2].ImplementedTypes.Array.data[0]
-      value: Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization,
-        Version=1.0.5.1, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[2].ImplementedTypes.Array.data[1]
-      value: UnityEngine.ISerializationCallbackReceiver, UnityEngine, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[2].SelectedTypeString
-      value: Booma.Proxy.ILoginDetailsModel, Booma.Proxy.Client.Unity.Login, Version=1.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[2].ImplementedTypes.Array.data[2]
-      value: Booma.Proxy.ILoginDetailsModel, Booma.Proxy.Client.Unity.Login, Version=1.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[2].ImplementedTypes.Array.data[3]
-      value: Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization,
-        Version=1.0.5.1, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[2].SelectedPopupIndex
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}
       propertyPath: TypePairs.Array.data[3].behaviour
@@ -642,7 +703,7 @@ Prefab:
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}
       propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[0]
-      value: Booma.Proxy.ICharacterSlotSelectedModel, Booma.Proxy.Client.Unity.Login,
+      value: Booma.Proxy.ICharacterSlotSelectedModel, Booma.Proxy.Client.Unity.Character,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
@@ -654,7 +715,7 @@ Prefab:
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}
       propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[2]
-      value: Booma.Proxy.ILoginDetailsModel, Booma.Proxy.Client.Unity.Login, Version=1.0.0.0,
+      value: UnityEngine.ISerializationCallbackReceiver, UnityEngine, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
@@ -666,7 +727,7 @@ Prefab:
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}
       propertyPath: TypePairs.Array.data[3].SelectedTypeString
-      value: Booma.Proxy.ICharacterSlotSelectedModel, Booma.Proxy.Client.Unity.Login,
+      value: Booma.Proxy.ICharacterSlotSelectedModel, Booma.Proxy.Client.Unity.Character,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
@@ -676,96 +737,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1850235821
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 294.75626
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 317.15244
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -747.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114649705933426082, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 114649705933426082, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 907883277}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SendCharacterSelection
-      objectReference: {fileID: 0}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1984864600
 GameObject:
@@ -861,58 +832,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &2078318150
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2078318152}
-  - component: {fileID: 2078318151}
-  m_Layer: 0
-  m_Name: '[Login Details]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2078318151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2078318150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 719799980, guid: 1249c9f27ffff6e41965556154eb2e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: shouldLoadPassword
-      Entry: 5
-      Data: true
---- !u!4 &2078318152
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2078318150}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.073845, y: 97.51158, z: -14.64159}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1621179241}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2084456443
 GameObject:
   m_ObjectHideFlags: 0
