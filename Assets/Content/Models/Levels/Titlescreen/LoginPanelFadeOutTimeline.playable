@@ -680,11 +680,11 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 2.9
+  - m_Start: 2.45
     m_ClipIn: 0
     m_Asset: {fileID: 114078025216784054}
     m_UnderlyingAsset: {fileID: 114078025216784054}
-    m_Duration: 3.1000001064949996
+    m_Duration: 2.9833333333333334
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
