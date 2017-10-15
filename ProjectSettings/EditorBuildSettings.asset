@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ServerSelection.unity
     guid: 2eb6513dccb818447a33635d531f0d8d
+  - enabled: 1
+    path: Assets/Scenes/LobbyTestScene.unity
+    guid: dc926af6aaa3c034abf9cc5c4be34655
