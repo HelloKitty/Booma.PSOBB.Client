@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1080741085926786}
+  m_IsPrefabParent: 1
+--- !u!1 &1080741085926786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4248738330556368}
+  - component: {fileID: 114917886100893978}
+  - component: {fileID: 114791787081215578}
+  - component: {fileID: 114267144430948806}
+  - component: {fileID: 114770693334997744}
+  - component: {fileID: 114186735936971580}
+  m_Layer: 0
+  m_Name: '[Sceneject Lobby]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4248738330556368
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1080741085926786}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -22.316513, y: -3.2232556, z: 14.08173}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114186735936971580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1080741085926786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1892843299, guid: d23fcfcc6868e5048b7878e50801c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114267144430948806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1080741085926786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1943801071, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114770693334997744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1080741085926786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1891231575, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoggingLevel: 4
+--- !u!114 &114791787081215578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1080741085926786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 187755695, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoggingLevel: 4
+--- !u!114 &114917886100893978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1080741085926786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1412651099, guid: ab751f8a9a0328848be45f7744baa449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TypePairs:
+  - behaviour: {fileID: 0}
+    ImplementedTypes:
+    - Booma.Proxy.INetworkPlayerFactory, Booma.Proxy.Client.Unity.Ship, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=1.0.5.1,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.ISerializationCallbackReceiver, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=1.0.5.1,
+      Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.INetworkPlayerFactory, Booma.Proxy.Client.Unity.Ship,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  - behaviour: {fileID: 0}
+    ImplementedTypes:
+    - Booma.Proxy.ICharacterSlotSelectedModel, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.ICharacterSlotSelectedModel, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  NonBehaviourDependencies: []
+  shouldLookSceneWideForDependencies: 1

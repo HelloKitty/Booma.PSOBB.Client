@@ -18,5 +18,14 @@ EditorBuildSettings:
     path: Assets/Scenes/ServerSelection.unity
     guid: 2eb6513dccb818447a33635d531f0d8d
   - enabled: 1
-    path: Assets/Scenes/LobbyTestScene.unity
+    path: Assets/Scenes/PreBlockBurstScene.unity
+    guid: acdd53df2d8c41643bd339ab0733272e
+  - enabled: 1
+    path: Assets/Scenes/Lobby/Lobby01.unity
     guid: dc926af6aaa3c034abf9cc5c4be34655
+  - enabled: 1
+    path: Assets/Scenes/Lobby/LobbySoccer01.unity
+    guid: 801c39ef098263d45bb5a3c09c328ea0
+  - enabled: 1
+    path: Assets/Scenes/GameLevels/Pioneer2_00.unity
+    guid: 4306728dce69b1147b23532c581f2795

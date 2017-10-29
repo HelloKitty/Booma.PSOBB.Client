@@ -4636,7 +4636,10 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: AuthType
+      Entry: 3
+      Data: 4
 --- !u!4 &466390496
 Transform:
   m_ObjectHideFlags: 0
@@ -5289,7 +5292,6 @@ GameObject:
   m_Component:
   - component: {fileID: 855699889}
   - component: {fileID: 855699888}
-  - component: {fileID: 855699887}
   - component: {fileID: 855699886}
   - component: {fileID: 855699885}
   - component: {fileID: 855699884}
@@ -5335,17 +5337,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoggingLevel: 0
---- !u!114 &855699887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 855699883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1131388508, guid: 35823b7680ca68a458e462a6bdf6c471, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &855699888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5394,7 +5385,6 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     SelectedPopupIndex: 0
   NonBehaviourDependencies: []
-  ContainerServiceProvider: {fileID: 855699887}
 --- !u!4 &855699889
 Transform:
   m_ObjectHideFlags: 0

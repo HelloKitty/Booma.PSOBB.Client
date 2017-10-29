@@ -13191,6 +13191,7 @@ GameObject:
   - component: {fileID: 1868671402}
   - component: {fileID: 1868671403}
   - component: {fileID: 1868671405}
+  - component: {fileID: 1868671404}
   m_Layer: 0
   m_Name: '[Handlers]'
   m_TagString: Untagged
@@ -13331,6 +13332,26 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1868671404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868671398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1687065752, guid: 781a54675c1337b4fbf38a4e2e32f3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
 --- !u!114 &1868671405
 MonoBehaviour:
   m_ObjectHideFlags: 0
