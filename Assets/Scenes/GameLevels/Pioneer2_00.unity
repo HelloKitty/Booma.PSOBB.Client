@@ -5312,6 +5312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2032960722}
   - component: {fileID: 2032960723}
+  - component: {fileID: 2032960724}
   m_Layer: 0
   m_Name: '[Game Handlers]'
   m_TagString: Untagged
@@ -5341,6 +5342,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1104161820, guid: d23fcfcc6868e5048b7878e50801c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+--- !u!114 &2032960724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2032960721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1289375723, guid: d23fcfcc6868e5048b7878e50801c80f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
