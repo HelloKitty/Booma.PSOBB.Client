@@ -117,7 +117,12 @@
         </member>
         <member name="F:Sirenix.Serialization.GlobalSerializationConfig.HideOdinSerializeAttributeWarningMessages">
             <summary>
-            Whether the user has chosen to hide warning messages related to the OdinSerialize attribute.
+            Whether the user has chosen to hide the warning messages related to the OdinSerialize attribute.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Serialization.GlobalSerializationConfig.HideNonSerializedShowInInspectorWarningMessages">
+            <summary>
+            Whether the user has chosen to hide the warning messages related to the SerializeField and ShowInInspector attributes on non-serialized members.
             </summary>
         </member>
         <member name="P:Sirenix.Serialization.GlobalSerializationConfig.Logger">
