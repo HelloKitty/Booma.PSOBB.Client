@@ -11,15 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 337831424, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
   m_Name: LoginPanelFadeOutTimeline
   m_EditorClassIdentifier: 
-  m_Id: 0
   m_NextId: 6
   m_Tracks:
   - {fileID: 114374317435327700}
   m_FixedDuration: 0
   m_EditorSettings:
-    fps: 60
-  m_UpdateMode: 0
-  m_ParameterName: 
+    m_Framerate: 60
   m_DurationMode: 0
 --- !u!74 &74687944341657762
 AnimationClip:
@@ -629,9 +626,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Locked: 0
   m_Muted: 0
-  m_Soloed: 0
-  m_Height: 0
-  m_InlineAnimationCurveHeight: 158
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 74687944341657762}
   m_Parent: {fileID: 114374317435327700}
@@ -646,6 +640,8 @@ MonoBehaviour:
   m_Position: {x: 0, y: 0, z: 0}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_ApplyOffsets: 0
+  m_AvatarMask: {fileID: 0}
+  m_ApplyAvatarMask: 1
 --- !u!114 &114370316682851170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -659,9 +655,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Locked: 0
   m_Muted: 0
-  m_Soloed: 0
-  m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114374317435327700}
@@ -672,14 +665,7 @@ MonoBehaviour:
     m_Asset: {fileID: 114093926945261432}
     m_UnderlyingAsset: {fileID: 8300000, guid: 85d1332f5418f7c4492d6fb7076c0776, type: 3}
     m_Duration: 1.9998185941043083
-    m_ParentID: 0
     m_TimeScale: 1
-    m_BlendCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
     m_ParentTrack: {fileID: 114370316682851170}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
@@ -725,13 +711,13 @@ MonoBehaviour:
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
-    m_ID: -1639384413
     m_Recordable: 0
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Login
+    m_Version: 1
 --- !u!114 &114374317435327700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -745,9 +731,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Locked: 0
   m_Muted: 0
-  m_Soloed: 0
-  m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -770,9 +753,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Locked: 0
   m_Muted: 0
-  m_Soloed: 0
-  m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 74894185502367762}
   m_Parent: {fileID: 114374317435327700}
@@ -787,6 +767,8 @@ MonoBehaviour:
   m_Position: {x: 0, y: 0, z: 0}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_ApplyOffsets: 0
+  m_AvatarMask: {fileID: 0}
+  m_ApplyAvatarMask: 1
 --- !u!114 &114813905916266822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -898,9 +880,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Locked: 0
   m_Muted: 0
-  m_Soloed: 0
-  m_Height: 0
-  m_InlineAnimationCurveHeight: 100
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 74824205870626658}
   m_Parent: {fileID: 114374317435327700}
@@ -915,3 +894,5 @@ MonoBehaviour:
   m_Position: {x: 0, y: 0, z: 0}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_ApplyOffsets: 0
+  m_AvatarMask: {fileID: 0}
+  m_ApplyAvatarMask: 1
