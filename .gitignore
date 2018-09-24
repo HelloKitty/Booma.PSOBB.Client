@@ -37,3 +37,7 @@ sysinfo.txt
 
 # Lighting Crap
 *.exr
+Lightmap-*.*
+ReflectionProbe-*.*
+LightingData.asset
+LightingData.asset.meta
