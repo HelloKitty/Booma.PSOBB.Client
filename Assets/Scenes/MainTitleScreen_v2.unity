@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 134547388}
   - component: {fileID: 134547387}
   - component: {fileID: 134547391}
+  - component: {fileID: 134547390}
   m_Layer: 8
   m_Name: Username Field
   m_TagString: Untagged
@@ -392,6 +393,28 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 134547385}
   m_CullTransparentMesh: 0
+--- !u!114 &134547390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 134547385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1457951531, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _UnityUIObject: {fileID: 134547387}
+  _RegisterationKey: 5
 --- !u!114 &134547391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,7 +563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &145802795
 RectTransform:
   m_ObjectHideFlags: 0
@@ -710,6 +733,7 @@ GameObject:
   - component: {fileID: 194660327}
   - component: {fileID: 194660326}
   - component: {fileID: 194660329}
+  - component: {fileID: 194660330}
   m_Layer: 8
   m_Name: LoginControlButton
   m_TagString: Untagged
@@ -808,18 +832,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 194660326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 964526881}
-        m_MethodName: StartConnection
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &194660329
@@ -858,6 +871,28 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &194660330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 194660324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1010445866, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _UnityUIObject: {fileID: 194660328}
+  _RegisterationKey: 7
 --- !u!1 &242631020
 GameObject:
   m_ObjectHideFlags: 0
@@ -5796,171 +5831,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 347421171}
   m_CullTransparentMesh: 0
---- !u!1 &466390491
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 466390496}
-  - component: {fileID: 466390495}
-  - component: {fileID: 466390493}
-  - component: {fileID: 466390492}
-  - component: {fileID: 466390494}
-  - component: {fileID: 466390497}
-  m_Layer: 0
-  m_Name: '[Handlers]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &466390492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466390491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2136215474, guid: a630b40ccdecbc34c8c2f688e23e3d46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  OnConnectionRedirected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 42732276}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 466390497}
-        m_MethodName: LoadScene
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &466390493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466390491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -903594527, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  OnLoginFailed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnLoginSuccess:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &466390494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466390491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1490652534, guid: a630b40ccdecbc34c8c2f688e23e3d46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
---- !u!114 &466390495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466390491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1152856672, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: AuthType
-      Entry: 3
-      Data: 4
---- !u!4 &466390496
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466390491}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &466390497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466390491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 640583306, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultWaitTime: 5.5
 --- !u!1 &591562649
 GameObject:
   m_ObjectHideFlags: 0
@@ -6459,6 +6329,46 @@ Transform:
   m_Father: {fileID: 1061205210}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &794925381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 794925383}
+  - component: {fileID: 794925382}
+  m_Layer: 0
+  m_Name: '[Main]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &794925382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 794925381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 507121233, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &794925383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 794925381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.868134, y: 17.065643, z: -109.47461}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &830176772
 GameObject:
   m_ObjectHideFlags: 0
@@ -6556,6 +6466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836178912}
   - component: {fileID: 836178911}
+  - component: {fileID: 836178913}
   m_Layer: 0
   m_Name: TitleFadoutAnimationTimeline
   m_TagString: Untagged
@@ -6600,6 +6511,28 @@ Transform:
   m_Father: {fileID: 1061205210}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &836178913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 836178910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1293877816, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _UnityUIObject: {fileID: 836178911}
+  _RegisterationKey: 7
 --- !u!1 &855699883
 GameObject:
   m_ObjectHideFlags: 0
@@ -6610,8 +6543,11 @@ GameObject:
   - component: {fileID: 855699889}
   - component: {fileID: 855699888}
   - component: {fileID: 855699886}
-  - component: {fileID: 855699885}
   - component: {fileID: 855699884}
+  - component: {fileID: 855699885}
+  - component: {fileID: 855699887}
+  - component: {fileID: 855699891}
+  - component: {fileID: 855699890}
   m_Layer: 0
   m_Name: '[Sceneject]'
   m_TagString: Untagged
@@ -6639,9 +6575,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 855699883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1943801071, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
+  m_Script: {fileID: -1943801071, guid: 5d4e02cbddd691d4eaa97804b118118d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HandlersType: 5
 --- !u!114 &855699886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6654,6 +6591,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoggingLevel: 0
+--- !u!114 &855699887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 855699883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1572588856, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &855699888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6668,37 +6616,136 @@ MonoBehaviour:
   TypePairs:
   - behaviour: {fileID: 1046218066}
     ImplementedTypes:
-    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=1.0.5.1,
+    - Booma.Proxy.IClientSessionDetails, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    - UnityEngine.ISerializationCallbackReceiver, UnityEngine, Version=0.0.0.0, Culture=neutral,
+    - Booma.Proxy.VersionStringBasedSessionDetailsModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.SessionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-    - Booma.Proxy.ILoginDetailsModel, Booma.Proxy.Client.Unity.Login, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=1.0.5.1,
-      Culture=neutral, PublicKeyToken=null
-    SelectedTypeString: Booma.Proxy.IClientSessionDetails, Booma.Proxy.Client.Unity.Authentication,
+    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - Booma.Proxy.VersionStringBasedSessionDetailsModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.IClientSessionDetails, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  - behaviour: {fileID: 1898938783}
+    ImplementedTypes:
+    - Booma.Proxy.IGameConnectionEndpointDetails, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.EditorExposedConnectionEndpointDetails, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.ConnectionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - Booma.Proxy.EditorExposedConnectionEndpointDetails, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.IGameConnectionEndpointDetails, Booma.Proxy.Client.Unity.Common,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     SelectedPopupIndex: 0
   - behaviour: {fileID: 1521826688}
     ImplementedTypes:
-    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=1.0.5.1,
+    - Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    - Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Authentication,
+    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=2.0.5.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.ISerializationCallbackReceiver, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.ScenePlayerPrefsAuthDetailsModel, Booma.Proxy.Client.Unity.Authentication,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    - UnityEngine.ISerializationCallbackReceiver, UnityEngine, Version=0.0.0.0, Culture=neutral,
+    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=2.0.5.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=1.0.5.1,
-      Culture=neutral, PublicKeyToken=null
-    SelectedTypeString: Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Authentication,
+    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - Booma.Proxy.ScenePlayerPrefsAuthDetailsModel, Booma.Proxy.Client.Unity.Authentication,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    SelectedPopupIndex: 1
-  - behaviour: {fileID: 1898938783}
+    SelectedTypeString: Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  - behaviour: {fileID: 964526881}
     ImplementedTypes:
-    - Booma.Proxy.ILoginConnectionEndpointDetails, Booma.Proxy.Client.Unity.Login,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    - Booma.Proxy.ConnectionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Login,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    SelectedTypeString: Booma.Proxy.IGameConnectionEndpointDetails, Booma.Proxy.Client.Unity.Common,
+    - Booma.INetworkClientExportable, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - GladNet.IConnectable, GladNet3.Common.API, Version=1.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=2.0.5.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.ISerializationCallbackReceiver, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.GameNetworkClient, Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.BaseUnityNetworkClient`2[[Booma.Proxy.PSOBBGamePacketPayloadServer,
+      Booma.Proxy.Packets.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Booma.Proxy.PSOBBGamePacketPayloadClient,
+      Booma.Proxy.Packets.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]],
+      Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=2.0.5.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - Booma.Proxy.GameNetworkClient, Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: GladNet.IConnectable, GladNet3.Common.API, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 1
+  - behaviour: {fileID: 964526881}
+    ImplementedTypes:
+    - Booma.INetworkClientExportable, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - GladNet.IConnectable, GladNet3.Common.API, Version=1.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=2.0.5.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.ISerializationCallbackReceiver, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.GameNetworkClient, Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.BaseUnityNetworkClient`2[[Booma.Proxy.PSOBBGamePacketPayloadServer,
+      Booma.Proxy.Packets.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Booma.Proxy.PSOBBGamePacketPayloadClient,
+      Booma.Proxy.Packets.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]],
+      Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=2.0.5.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - Booma.Proxy.GameNetworkClient, Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.INetworkClientExportable, Booma.Proxy.Client.Unity.Common,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     SelectedPopupIndex: 0
   NonBehaviourDependencies: []
@@ -6716,6 +6763,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &855699890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 855699883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1903963158, guid: 5d4e02cbddd691d4eaa97804b118118d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneType: 5
+--- !u!114 &855699891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 855699883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 547604847, guid: 5d4e02cbddd691d4eaa97804b118118d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneType: 5
 --- !u!1 &865195457
 GameObject:
   m_ObjectHideFlags: 0
@@ -11814,6 +11885,7 @@ GameObject:
   - component: {fileID: 1032165489}
   - component: {fileID: 1032165488}
   - component: {fileID: 1032165492}
+  - component: {fileID: 1032165491}
   m_Layer: 8
   m_Name: Password Field
   m_TagString: Untagged
@@ -11903,18 +11975,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1428810276}
-        m_MethodName: OnPasswordChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -11958,6 +12019,28 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1032165486}
   m_CullTransparentMesh: 0
+--- !u!114 &1032165491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1032165486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1457951531, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _UnityUIObject: {fileID: 1032165488}
+  _RegisterationKey: 6
 --- !u!114 &1032165492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12390,7 +12473,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1047306619
 GameObject:
@@ -18142,7 +18225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
-    SerializedBytes: 
+    SerializedBytes: []
     ReferencedUnityObjects:
     - {fileID: 1521826688}
     SerializedBytesString: 
@@ -28745,7 +28828,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1898938783
 MonoBehaviour:
@@ -28759,7 +28842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndpointIpAddress: 127.0.0.1
-  EndpointPort: 5000
+  EndpointPort: 12000
 --- !u!1 &1903094472
 GameObject:
   m_ObjectHideFlags: 0
