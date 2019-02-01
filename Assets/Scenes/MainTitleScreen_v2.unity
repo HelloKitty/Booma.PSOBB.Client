@@ -11859,7 +11859,6 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  ConnectOnStart: 0
 --- !u!4 &964526882
 Transform:
   m_ObjectHideFlags: 0
@@ -28828,7 +28827,7 @@ MonoBehaviour:
   m_Script: {fileID: 1956185847, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EndpointIpAddress: 127.0.0.1
+  EndpointIpAddress: 72.190.177.214
   EndpointPort: 12000
 --- !u!1 &1903094472
 GameObject:
