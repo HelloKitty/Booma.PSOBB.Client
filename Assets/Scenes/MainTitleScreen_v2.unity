@@ -18223,19 +18223,6 @@ MonoBehaviour:
   m_Script: {fileID: -115239772, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: []
-    ReferencedUnityObjects:
-    - {fileID: 1521826688}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Model
-      Entry: 10
-      Data: 0
 --- !u!224 &1428810277
 RectTransform:
   m_ObjectHideFlags: 0
