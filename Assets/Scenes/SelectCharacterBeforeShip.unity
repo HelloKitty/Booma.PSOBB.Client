@@ -475,7 +475,7 @@ Prefab:
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}
       propertyPath: TypePairs.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}

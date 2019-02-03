@@ -413,8 +413,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 134547387}
   _RegisterationKey: 5
+  _UnityUIObject: {fileID: 134547387}
 --- !u!114 &134547391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,8 +891,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 194660328}
   _RegisterationKey: 7
+  _UnityUIObject: {fileID: 194660328}
 --- !u!1 &242631020
 GameObject:
   m_ObjectHideFlags: 0
@@ -6531,8 +6531,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 836178911}
   _RegisterationKey: 7
+  _UnityUIObject: {fileID: 836178911}
 --- !u!1 &855699883
 GameObject:
   m_ObjectHideFlags: 0
@@ -6682,70 +6682,6 @@ MonoBehaviour:
     - Booma.Proxy.ScenePlayerPrefsAuthDetailsModel, Booma.Proxy.Client.Unity.Authentication,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     SelectedTypeString: Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Common,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    SelectedPopupIndex: 0
-  - behaviour: {fileID: 964526881}
-    ImplementedTypes:
-    - Booma.INetworkClientExportable, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    - GladNet.IConnectable, GladNet3.Common.API, Version=1.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=2.0.5.0,
-      Culture=neutral, PublicKeyToken=null
-    - UnityEngine.ISerializationCallbackReceiver, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    - Booma.Proxy.GameNetworkClient, Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    - Booma.Proxy.BaseUnityNetworkClient`2[[Booma.Proxy.PSOBBGamePacketPayloadServer,
-      Booma.Proxy.Packets.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Booma.Proxy.PSOBBGamePacketPayloadClient,
-      Booma.Proxy.Packets.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]],
-      Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=2.0.5.0,
-      Culture=neutral, PublicKeyToken=null
-    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    - Booma.Proxy.GameNetworkClient, Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    SelectedTypeString: GladNet.IConnectable, GladNet3.Common.API, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    SelectedPopupIndex: 1
-  - behaviour: {fileID: 964526881}
-    ImplementedTypes:
-    - Booma.INetworkClientExportable, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    - GladNet.IConnectable, GladNet3.Common.API, Version=1.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=2.0.5.0,
-      Culture=neutral, PublicKeyToken=null
-    - UnityEngine.ISerializationCallbackReceiver, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    - Booma.Proxy.GameNetworkClient, Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    - Booma.Proxy.BaseUnityNetworkClient`2[[Booma.Proxy.PSOBBGamePacketPayloadServer,
-      Booma.Proxy.Packets.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Booma.Proxy.PSOBBGamePacketPayloadClient,
-      Booma.Proxy.Packets.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]],
-      Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=2.0.5.0,
-      Culture=neutral, PublicKeyToken=null
-    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    - Booma.Proxy.GameNetworkClient, Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    SelectedTypeString: Booma.INetworkClientExportable, Booma.Proxy.Client.Unity.Common,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     SelectedPopupIndex: 0
   NonBehaviourDependencies: []
@@ -12038,8 +11974,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 1032165488}
   _RegisterationKey: 6
+  _UnityUIObject: {fileID: 1032165488}
 --- !u!114 &1032165492
 MonoBehaviour:
   m_ObjectHideFlags: 0

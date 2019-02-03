@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 8
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -39,6 +39,7 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -54,11 +55,10 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 9
+    serializedVersion: 10
     m_Resolution: 2
     m_BakeResolution: 40
-    m_TextureWidth: 1024
-    m_TextureHeight: 1024
+    m_AtlasSize: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -77,15 +77,18 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -107,286 +110,55 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &485924650
-Prefab:
+--- !u!1 &3488534
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializationNodes.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.PrefabModifications.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[4].ImplementedTypes.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4058822056770954, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4058822056770954, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4058822056770954, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4058822056770954, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4058822056770954, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4058822056770954, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4058822056770954, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4058822056770954, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"shouldLoadPassword","value":{"$id":0,"$type":"System.Boolean,
-        mscorlib",true}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedFormat
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[0]
-      value: 43
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[2]
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[6]
-      value: 115
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[7]
-      value: 104
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[8]
-      value: 111
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[9]
-      value: 117
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[10]
-      value: 108
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[11]
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[12]
-      value: 76
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[13]
-      value: 111
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[14]
-      value: 97
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[15]
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[16]
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[17]
-      value: 97
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[18]
-      value: 115
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[19]
-      value: 115
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[20]
-      value: 119
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[21]
-      value: 111
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[22]
-      value: 114
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[23]
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114046584774059992, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[24]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[3].behaviour
-      value: 
-      objectReference: {fileID: 2122732948}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[0]
-      value: Booma.Proxy.ICharacterSlotSelectedModel, Booma.Proxy.Client.Unity.Common,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[1]
-      value: UnityEngine.MonoBehaviour, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[2]
-      value: UnityEngine.ISerializationCallbackReceiver, UnityEngine, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[3]
-      value: Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization,
-        Version=1.0.5.1, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[3].SelectedTypeString
-      value: Booma.Proxy.ICharacterSlotSelectedModel, Booma.Proxy.Client.Unity.Common,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[3].SelectedPopupIndex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114599975339072582, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: LoggingLevel
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114109477832341916, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: LoggingLevel
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[4].behaviour
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[4].ImplementedTypes.Array.data[0]
-      value: Booma.Proxy.INetworkPlayerFactory, Booma.Proxy.Client.Unity.Ship, Version=1.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[4].ImplementedTypes.Array.data[1]
-      value: UnityEngine.MonoBehaviour, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
-        type: 2}
-      propertyPath: TypePairs.Array.data[4].SelectedTypeString
-      value: Booma.Proxy.INetworkPlayerFactory, Booma.Proxy.Client.Unity.Ship, Version=1.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114623027692281158, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-  m_ParentPrefab: {fileID: 100100000, guid: 8844fc25e74b7a2438573a17565deb29, type: 2}
-  m_IsPrefabParent: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3488536}
+  - component: {fileID: 3488535}
+  m_Layer: 0
+  m_Name: '[Main]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &3488535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3488534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 507121233, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &3488536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3488534}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.868134, y: 17.065643, z: -109.47461}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &512234939
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 512234944}
   - component: {fileID: 512234943}
@@ -403,34 +175,38 @@ GameObject:
 --- !u!81 &512234940
 AudioListener:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 512234939}
   m_Enabled: 1
 --- !u!124 &512234941
 Behaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 512234939}
   m_Enabled: 1
 --- !u!92 &512234942
 Behaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 512234939}
   m_Enabled: 1
 --- !u!20 &512234943
 Camera:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 512234939}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -452,15 +228,15 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!4 &512234944
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 512234939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -473,9 +249,9 @@ Transform:
 --- !u!1 &1005065296
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 1005065300}
   - component: {fileID: 1005065299}
@@ -491,7 +267,7 @@ GameObject:
 --- !u!114 &1005065297
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1005065296}
   m_Enabled: 1
@@ -507,7 +283,7 @@ MonoBehaviour:
 --- !u!114 &1005065298
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1005065296}
   m_Enabled: 1
@@ -528,7 +304,7 @@ MonoBehaviour:
 --- !u!223 &1005065299
 Canvas:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1005065296}
   m_Enabled: 1
@@ -548,7 +324,7 @@ Canvas:
 --- !u!224 &1005065300
 RectTransform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1005065296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -557,7 +333,7 @@ RectTransform:
   m_Children:
   - {fileID: 1384006131}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -567,9 +343,9 @@ RectTransform:
 --- !u!1 &1019973054
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 1019973057}
   - component: {fileID: 1019973056}
@@ -584,7 +360,7 @@ GameObject:
 --- !u!114 &1019973055
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1019973054}
   m_Enabled: 1
@@ -602,7 +378,7 @@ MonoBehaviour:
 --- !u!114 &1019973056
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1019973054}
   m_Enabled: 1
@@ -616,7 +392,7 @@ MonoBehaviour:
 --- !u!4 &1019973057
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1019973054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -624,14 +400,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198708010
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 1198708012}
   - component: {fileID: 1198708011}
@@ -645,7 +421,7 @@ GameObject:
 --- !u!108 &1198708011
 Light:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1198708010}
   m_Enabled: 1
@@ -672,22 +448,9 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -695,7 +458,7 @@ Light:
 --- !u!4 &1198708012
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1198708010}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
@@ -708,9 +471,9 @@ Transform:
 --- !u!1 &1384006130
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 1384006131}
   - component: {fileID: 1384006133}
@@ -725,7 +488,7 @@ GameObject:
 --- !u!224 &1384006131
 RectTransform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1384006130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -743,7 +506,7 @@ RectTransform:
 --- !u!114 &1384006132
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1384006130}
   m_Enabled: 1
@@ -770,9 +533,10 @@ MonoBehaviour:
 --- !u!222 &1384006133
 CanvasRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1384006130}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1504247868
 Prefab:
   m_ObjectHideFlags: 0
@@ -810,7 +574,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4629986939623428, guid: 884e279e2e4ff9f44ac0b556f3d6d241, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114776402892639106, guid: 884e279e2e4ff9f44ac0b556f3d6d241,
         type: 2}
@@ -829,40 +593,83 @@ Prefab:
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 884e279e2e4ff9f44ac0b556f3d6d241, type: 2}
-  m_IsPrefabParent: 0
+  m_SourcePrefab: {fileID: 100100000, guid: 884e279e2e4ff9f44ac0b556f3d6d241, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!114 &1504247869 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114776402892639106, guid: 884e279e2e4ff9f44ac0b556f3d6d241,
+  m_CorrespondingSourceObject: {fileID: 114776402892639106, guid: 884e279e2e4ff9f44ac0b556f3d6d241,
     type: 2}
   m_PrefabInternal: {fileID: 1504247868}
   m_Script: {fileID: -1675282927, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
---- !u!1 &1889738960
+--- !u!1 &1813603219
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
-  - component: {fileID: 1889738962}
-  - component: {fileID: 1889738961}
-  - component: {fileID: 1889738963}
+  - component: {fileID: 1813603229}
+  - component: {fileID: 1813603228}
+  - component: {fileID: 1813603227}
+  - component: {fileID: 1813603226}
+  - component: {fileID: 1813603225}
+  - component: {fileID: 1813603224}
+  - component: {fileID: 1813603223}
+  - component: {fileID: 1813603222}
+  - component: {fileID: 1813603221}
+  - component: {fileID: 1813603220}
   m_Layer: 0
-  m_Name: '[Handlers]'
+  m_Name: '[Sceneject]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1889738961
+--- !u!114 &1813603220
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1889738960}
+  m_GameObject: {fileID: 1813603219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1232308863, guid: d23fcfcc6868e5048b7878e50801c80f, type: 3}
+  m_Script: {fileID: -1943801071, guid: 5d4e02cbddd691d4eaa97804b118118d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandlersType: 8
+--- !u!114 &1813603221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1813603219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 547604847, guid: 5d4e02cbddd691d4eaa97804b118118d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneType: 8
+--- !u!114 &1813603222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1813603219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1903963158, guid: 5d4e02cbddd691d4eaa97804b118118d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneType: 8
+--- !u!114 &1813603223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1813603219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1494054531, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -873,248 +680,211 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
---- !u!4 &1889738962
+    SerializationNodes:
+    - Name: shouldLoadPassword
+      Entry: 5
+      Data: true
+--- !u!114 &1813603224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1813603219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -648948680, guid: cb36b88d762f84c42a03ce87b590a317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1813603225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1813603219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2131595504, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1813603226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1813603219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1891231575, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoggingLevel: 0
+--- !u!114 &1813603227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1813603219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 187755695, guid: b79aee9c1a85a294db3768e7954b63a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoggingLevel: 0
+--- !u!114 &1813603228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1813603219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1412651099, guid: ab751f8a9a0328848be45f7744baa449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TypePairs:
+  - behaviour: {fileID: 1813603225}
+    ImplementedTypes:
+    - Booma.Proxy.IGameConnectionEndpointDetails, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.FlowedStoredConnectionDetailsModel, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.ConnectionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - Booma.Proxy.FlowedStoredConnectionDetailsModel, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.IGameConnectionEndpointDetails, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  - behaviour: {fileID: 1813603224}
+    ImplementedTypes:
+    - Booma.Proxy.IClientSessionDetails, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.FlowedStoredSessionDetailsModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.SessionDetailsPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - Booma.Proxy.FlowedStoredSessionDetailsModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.IClientSessionDetails, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  - behaviour: {fileID: 1813603223}
+    ImplementedTypes:
+    - Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=2.0.5.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.ISerializationCallbackReceiver, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.ScenePlayerPrefsAuthDetailsModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=2.0.5.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - Booma.Proxy.ScenePlayerPrefsAuthDetailsModel, Booma.Proxy.Client.Unity.Authentication,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.IAuthenticationDetailsModel, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  - behaviour: {fileID: 2122732948}
+    ImplementedTypes:
+    - Booma.Proxy.ICharacterSlotSelectedModel, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.CharacterSlotSelectedPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Character,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - Booma.Proxy.CharacterSlotSelectedPlayerPrefsStorageModel, Booma.Proxy.Client.Unity.Character,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.Proxy.ICharacterSlotSelectedModel, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  - behaviour: {fileID: 1504247869}
+    ImplementedTypes:
+    - Booma.INetworkClientExportable, Booma.Proxy.Client.Unity.Common, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - GladNet.IConnectable, GladNet3.Common.API, Version=1.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - Sirenix.Serialization.ISupportsPrefabSerialization, Sirenix.Serialization, Version=2.0.5.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.ISerializationCallbackReceiver, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.GameNetworkClient, Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Booma.Proxy.BaseUnityNetworkClient`2[[Booma.Proxy.PSOBBGamePacketPayloadServer,
+      Booma.Proxy.Packets.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Booma.Proxy.PSOBBGamePacketPayloadClient,
+      Booma.Proxy.Packets.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]],
+      Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    - Sirenix.OdinInspector.SerializedMonoBehaviour, Sirenix.Serialization, Version=2.0.5.0,
+      Culture=neutral, PublicKeyToken=null
+    - UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    - System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - Booma.Proxy.GameNetworkClient, Booma.Proxy.Client.Unity.NetworkClient, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    SelectedTypeString: Booma.INetworkClientExportable, Booma.Proxy.Client.Unity.Common,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    SelectedPopupIndex: 0
+  NonBehaviourDependencies: []
+  shouldLookSceneWideForDependencies: 0
+--- !u!4 &1813603229
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1889738960}
+  m_GameObject: {fileID: 1813603219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.20354821, y: 6.080158, z: -14.93553}
+  m_LocalPosition: {x: 32.868134, y: 17.065643, z: -109.47461}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1889738963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1889738960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 535237008, guid: d23fcfcc6868e5048b7878e50801c80f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  OnLobbyJoinEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1504247869}
-        m_MethodName: ExportmanagedClient
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
---- !u!1001 &2089054194
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializationNodes.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.PrefabModifications.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 294.75626
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 317.15244
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -747.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4172281897543974, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartBroadcasting
-      objectReference: {fileID: 0}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: OnLoginSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"AuthType","value":{"$id":0,"$type":"Booma.Proxy.SharedLoginRequest93Payload+ServerType,
-        Booma.Proxy.Packets.SharedServer",5}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114649379822779466, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 114649379822779466, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.Prefab
-      value: 
-      objectReference: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedFormat
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[0]
-      value: 29
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[2]
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[6]
-      value: 65
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[7]
-      value: 117
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[8]
-      value: 116
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[9]
-      value: 104
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[10]
-      value: 84
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[11]
-      value: 121
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[12]
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[13]
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197144153080642, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedBytes.Array.data[14]
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114736326278347978, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedFormat
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114649379822779466, guid: 47b31c45702cbb242b90b710d164e620,
-        type: 2}
-      propertyPath: serializationData.SerializedFormat
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 47b31c45702cbb242b90b710d164e620, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2122732947
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 2122732949}
   - component: {fileID: 2122732948}
@@ -1128,7 +898,7 @@ GameObject:
 --- !u!114 &2122732948
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2122732947}
   m_Enabled: 1
@@ -1139,7 +909,7 @@ MonoBehaviour:
 --- !u!4 &2122732949
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2122732947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1147,5 +917,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

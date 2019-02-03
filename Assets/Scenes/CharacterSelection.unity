@@ -246,8 +246,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 224589245}
   _RegisterationKey: 3
+  _UnityUIObject: {fileID: 224589245}
 --- !u!1 &295125010
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,8 +344,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 295125012}
   _RegisterationKey: 3
+  _UnityUIObject: {fileID: 295125012}
 --- !u!1 &442898475
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,8 +479,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 442898477}
   _RegisterationKey: 4
+  _UnityUIObject: {fileID: 442898477}
 --- !u!1 &487010084
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,7 +940,7 @@ Prefab:
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}
       propertyPath: TypePairs.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114318926153017454, guid: 8844fc25e74b7a2438573a17565deb29,
         type: 2}
@@ -1996,8 +1996,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 1536688589}
   _RegisterationKey: 2
+  _UnityUIObject: {fileID: 1536688589}
 --- !u!1 &1671553190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,8 +2248,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 1689454356}
   _RegisterationKey: 4
+  _UnityUIObject: {fileID: 1689454356}
 --- !u!1 &1794220520
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,8 +2383,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 1794220522}
   _RegisterationKey: 1
+  _UnityUIObject: {fileID: 1794220522}
 --- !u!1 &1881431418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,8 +2481,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 1881431420}
   _RegisterationKey: 1
+  _UnityUIObject: {fileID: 1881431420}
 --- !u!1 &1905649810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,5 +2579,5 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _UnityUIObject: {fileID: 1905649812}
   _RegisterationKey: 2
+  _UnityUIObject: {fileID: 1905649812}
