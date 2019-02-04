@@ -34,12 +34,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-
-# Lighting Crap
-*.exr
-Lightmap-*.*
-Lightmap-*.exr.meta
-ReflectionProbe-*.exr
-ReflectionProbe-*.exr.meta
-LightingData.asset
-LightingData.asset.meta
