@@ -55,25 +55,28 @@ SpriteAtlas:
     - {fileID: 21300000, guid: baaedcf7cdc60f34fabc50db2b8d526d, type: 3}
     - {fileID: 21300000, guid: 880c4e9febd767d4696c8b49c21595ba, type: 3}
     - {fileID: 21300000, guid: 5cdeee4e0e069de46aa96f7d0913752f, type: 3}
-    - {fileID: 21300000, guid: 4268ac8bfd0498c43923de2cd233e1c2, type: 3}
-    - {fileID: 21300000, guid: 3f6f157207380f94cb2acbfcc99816ec, type: 3}
+    - {fileID: 21300000, guid: 079dd2058162e4544a63a95e1ca30034, type: 3}
+    - {fileID: 21300000, guid: 34dd73c1b79d20047b5727cf3539d34e, type: 3}
     - {fileID: 21300000, guid: 3a1d2253aad604045802cb0fff5f2248, type: 3}
-    totalSpriteSurfaceArea: 2032640
+    - {fileID: 21300000, guid: fb4bceaf4d550c448953fe9e6c53b173, type: 3}
+    totalSpriteSurfaceArea: 4014080
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 3f6f157207380f94cb2acbfcc99816ec, type: 3}
+  - {fileID: 21300000, guid: 34dd73c1b79d20047b5727cf3539d34e, type: 3}
   - {fileID: 21300000, guid: 3a1d2253aad604045802cb0fff5f2248, type: 3}
+  - {fileID: 21300000, guid: 079dd2058162e4544a63a95e1ca30034, type: 3}
   - {fileID: 21300000, guid: baaedcf7cdc60f34fabc50db2b8d526d, type: 3}
-  - {fileID: 21300000, guid: 4268ac8bfd0498c43923de2cd233e1c2, type: 3}
   - {fileID: 21300000, guid: 5cdeee4e0e069de46aa96f7d0913752f, type: 3}
   - {fileID: 21300000, guid: 880c4e9febd767d4696c8b49c21595ba, type: 3}
+  - {fileID: 21300000, guid: fb4bceaf4d550c448953fe9e6c53b173, type: 3}
   m_PackedSpriteNamesToIndex:
-  - BackgroundPSO
+  - BackgroundPSO_1024
   - Phantasy_Star_Online_No_Orbs_POWEROFTWO
+  - BackgroundPSO_WithGrid_1024
   - BigCircle_512
-  - BackgroundPSO_WithGrid
   - MiniInsideDisc_128
   - InnerCircleText_256
+  - Phantasy_Star_Online_logo_only_orbs3
   m_Tag: TitleScreenBackgroundAtlas
   m_IsVariant: 0
