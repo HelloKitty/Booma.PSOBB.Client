@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TitleScreenBackgroundAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    - serializedVersion: 2
+      m_BuildTarget: Standalone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 29
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: baaedcf7cdc60f34fabc50db2b8d526d, type: 3}
+    - {fileID: 21300000, guid: 880c4e9febd767d4696c8b49c21595ba, type: 3}
+    - {fileID: 21300000, guid: 5cdeee4e0e069de46aa96f7d0913752f, type: 3}
+    - {fileID: 21300000, guid: 4268ac8bfd0498c43923de2cd233e1c2, type: 3}
+    - {fileID: 21300000, guid: 3f6f157207380f94cb2acbfcc99816ec, type: 3}
+    - {fileID: 21300000, guid: 3a1d2253aad604045802cb0fff5f2248, type: 3}
+    totalSpriteSurfaceArea: 2032640
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3f6f157207380f94cb2acbfcc99816ec, type: 3}
+  - {fileID: 21300000, guid: 3a1d2253aad604045802cb0fff5f2248, type: 3}
+  - {fileID: 21300000, guid: baaedcf7cdc60f34fabc50db2b8d526d, type: 3}
+  - {fileID: 21300000, guid: 4268ac8bfd0498c43923de2cd233e1c2, type: 3}
+  - {fileID: 21300000, guid: 5cdeee4e0e069de46aa96f7d0913752f, type: 3}
+  - {fileID: 21300000, guid: 880c4e9febd767d4696c8b49c21595ba, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - BackgroundPSO
+  - Phantasy_Star_Online_No_Orbs_POWEROFTWO
+  - BigCircle_512
+  - BackgroundPSO_WithGrid
+  - MiniInsideDisc_128
+  - InnerCircleText_256
+  m_Tag: TitleScreenBackgroundAtlas
+  m_IsVariant: 0
