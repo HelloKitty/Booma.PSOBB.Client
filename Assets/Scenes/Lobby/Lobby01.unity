@@ -7042,7 +7042,7 @@ PrefabInstance:
     - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
         type: 3}
       propertyPath: TypePairs.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
         type: 3}
@@ -7052,6 +7052,11 @@ PrefabInstance:
     - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
         type: 3}
       propertyPath: TypePairs.Array.data[0].ImplementedTypes.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.size
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
@@ -7157,6 +7162,69 @@ PrefabInstance:
       value: Booma.Proxy.LobbyPlayerPrefabProvider, Booma.Proxy.Client.Unity.Ship,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].behaviour
+      value: 
+      objectReference: {fileID: 2045212643}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[0]
+      value: Booma.Proxy.ISpawnPointStrategy, Booma.Proxy.Client.Unity.Ship, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[1]
+      value: Booma.Proxy.RoundRobinEntitySpawnLocationProvider, Booma.Proxy.Client.Unity.Ship,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[2]
+      value: UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[3]
+      value: UnityEngine.Behaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].SelectedTypeString
+      value: Booma.Proxy.ISpawnPointStrategy, Booma.Proxy.Client.Unity.Ship, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].SelectedPopupIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[4]
+      value: UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[5]
+      value: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[6]
+      value: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      objectReference: {fileID: 0}
+    - target: {fileID: 114917886100893978, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: TypePairs.Array.data[3].ImplementedTypes.Array.data[7]
+      value: Booma.Proxy.RoundRobinEntitySpawnLocationProvider, Booma.Proxy.Client.Unity.Ship,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
     - target: {fileID: 4248738330556368, guid: b69aa886d70d00743b6219a3e4e41127, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.316513
@@ -7189,6 +7257,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114770693334997744, guid: b69aa886d70d00743b6219a3e4e41127,
+        type: 3}
+      propertyPath: LoggingLevel
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114267144430948806, guid: b69aa886d70d00743b6219a3e4e41127, type: 3}
     - {fileID: 114791787081215578, guid: b69aa886d70d00743b6219a3e4e41127, type: 3}
@@ -7211,7 +7284,6 @@ MonoBehaviour:
   m_Script: {fileID: 1903963158, guid: 5d4e02cbddd691d4eaa97804b118118d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneType: 1
 --- !u!114 &909140497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7238,6 +7310,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneType: 1
+--- !u!114 &909140499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909140495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -616643212, guid: 986ac70759d2817438dfcf89880d9aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &916539748
 GameObject:
   m_ObjectHideFlags: 0
@@ -16576,6 +16660,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040319315}
   m_Mesh: {fileID: 4300272, guid: 2d3d619c6233199419be1dbaad8bae3b, type: 3}
+--- !u!1 &2045212642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2045212644}
+  - component: {fileID: 2045212643}
+  m_Layer: 0
+  m_Name: '[Spawn Manager]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2045212643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045212642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2100836465, guid: d23fcfcc6868e5048b7878e50801c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPointTransforms:
+  - {fileID: 1194971248}
+--- !u!4 &2045212644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045212642}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 279.19263, y: 44.801506, z: -11.705959}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2047309444
 GameObject:
   m_ObjectHideFlags: 0
